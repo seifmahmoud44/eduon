@@ -18,3 +18,22 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// menu
+
+const menuIcon = document.getElementById("icon");
+const slideMenu = document.getElementById("slide-menu");
+const closeIcon = document.getElementById("close-icon");
+const links = document.querySelectorAll(".nav-link");
+
+menuIcon.onclick = () => {
+  slideMenu.classList.add("active");
+};
+closeIcon.onclick = () => {
+  slideMenu.classList.remove("active");
+};
+links.forEach((ele) => {
+  ele.onclick = () => {
+    slideMenu.classList.remove("active");
+  };
+});
