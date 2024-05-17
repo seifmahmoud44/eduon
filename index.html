@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>EDUON</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href=""><img src="./assets/logo.webp" alt="" /></a>
+        <nav>
+          <a href="/index.html">الصفحة الرئيسية</a>
+          <div class="menu-con">
+            <a class="head-link" href="/index.html"
+              >من نحن <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="menu">
+              <a href="">من نحن</a>
+              <a href="">الباقات</a>
+              <a href="">الشروط والاحكام</a>
+              <a href="">اسئلة واستفسارات</a>
+              <a href="">اخبار المنصة</a>
+              <a href="">تواصل معنا</a>
+            </div>
+          </div>
+          <div class="menu-con">
+            <a class="head-link" href="/index.html"
+              >الدورات <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="menu">
+              <a href="">دورة القدرات</a>
+              <a href="">خريطة المنهج</a>
+              <a href="">قدرات كمي</a>
+              <a href="">قدرات لفظي</a>
+            </div>
+          </div>
+        </nav>
+        <button class="login-btn">تسجيل الدخول</button>
+        <div class="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="slide-menu">
+        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+        <a href="">الصفحة الرئيسية</a>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                من نحن
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="list">
+                <a href="">من نحن</a>
+                <a href="">الباقات</a>
+                <a href="">الشروط والاحكام</a>
+                <a href="">اسئلة واستفسارات</a>
+                <a href="">اخبار المنصة</a>
+                <a href="">تواصل معنا</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                الدورات
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="list">
+                <a href="">دورة القدرات</a>
+                <a href="">خريطة المنهج</a>
+                <a href="">قدرات كمي</a>
+                <a href="">قدرات لفظي</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>تسجيل الدخول</button>
+      </div>
+    </header>
+
+    <section class="hero-sec">
+      <div class="container">
+        <div class="content">
+          <h1>منصة تعليمية متخصصة</h1>
+          <p>
+            منصة تتيح للطلاب التدريب على اجتياج اسئلة القدرات و التى بها يتحدد
+            بها درجة الطلاب للدخول الى الجامعة
+          </p>
+        </div>
+
+        <img src="./assets/hero.svg" alt="" />
+      </div>
+    </section>
+    <section class="swiper-con">
+      <h1>خدماتنا مع منصة طريق التفوق</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/questions.png" alt="" />
+              </div>
+              <p>بنك الاسئلة</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/results.png" alt="" />
+              </div>
+              <p>نتائج فورية</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/analysis.png" alt="" />
+              </div>
+              <p>تحليل النتائج</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/questions-one.png" alt="" />
+              </div>
+              <p>تدريبات</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/student.png" alt="" />
+              </div>
+              <p>سجل خاص بك</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/calendar.png" alt="" />
+              </div>
+              <p>خطة دراسية</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/teacher.png" alt="" />
+              </div>
+              <p>مساعدة</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swipe">
+              <div class="img-con">
+                <img src="./assets/24-hours.png" alt="" />
+              </div>
+              <p>24 ساعة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="couses-sec">
+      <h1>دورات</h1>
+      <div class="container">
+        <a href="#">
+          <img src="./assets/course1.webp" alt="" />
+          <h1>دورة القدرات تأسيسي</h1>
+        </a>
+        <a href="#">
+          <img src="./assets/course2.webp" alt="" />
+          <h1>دورة القدرات كمي</h1>
+        </a>
+        <a href="#">
+          <img src="./assets/course3.webp" alt="" />
+          <h1>دورة القدرات لفظي</h1>
+        </a>
+      </div>
+    </section>
+    <section class="counter-sec">
+      <h1>احصائيات</h1>
+      <div class="container">
+        <div class="content">
+          <div class="img-con">
+            <img src="./assets/counter-shape-4.webp" alt="" />
+            <h1>565</h1>
+          </div>
+          <h1>اسئلةالقدرات اللفظي</h1>
+        </div>
+        <div class="content">
+          <div class="img-con">
+            <img src="./assets/counter-shape-2.webp" alt="" />
+            <h1>325</h1>
+          </div>
+          <h1>اسئلة القدرات الكمي</h1>
+        </div>
+        <div class="content">
+          <div class="img-con">
+            <img src="./assets/counter-shape-2.webp" alt="" />
+            <h1>350</h1>
+          </div>
+          <h1>النماذج</h1>
+        </div>
+        <div class="content">
+          <div class="img-con">
+            <img src="./assets/counter-shape-2.webp" alt="" />
+            <h1>5,253</h1>
+          </div>
+          <h1>بنك الاسئلة</h1>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
