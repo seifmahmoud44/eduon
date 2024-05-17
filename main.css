@@ -234,12 +234,14 @@ header button:hover {
   height: 100%;
 }
 .hero-sec .content h1 {
-  text-wrap: nowrap;
+  text-wrap: wrap;
+  text-align: center;
   font-weight: bold;
   font-size: 48px;
 }
 .hero-sec .content p {
   font-size: 20px;
+  text-align: center;
 }
 
 @media (max-width: 787px) {
@@ -416,4 +418,64 @@ header button:hover {
   .counter-sec .container {
     flex-direction: column;
   }
+}
+
+/* teachers sec */
+.teachers-sec > h1 {
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.teachers-sec .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teachers-sec .content {
+  position: relative;
+}
+.teachers-sec .img-con {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+.teachers-sec .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: transparent;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  transition: var(--main-transation);
+}
+.teachers-sec .social img {
+  width: 20px;
+  cursor: pointer;
+  transition: var(--main-transation);
+}
+.teachers-sec .social img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 787px) {
+  .teachers-sec .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+footer {
+  background-color: #f7b50e;
+  text-align: center;
+}
+footer p {
+  margin: 0;
 }
