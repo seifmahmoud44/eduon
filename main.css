@@ -113,6 +113,7 @@ nav a i {
   background-color: white;
   border-radius: 10px;
   box-shadow: var(--shadow);
+  z-index: 9;
 }
 .menu a {
   padding: 5px 10px;
@@ -150,6 +151,10 @@ header button:hover {
 }
 .slide-menu.active {
   left: 0;
+}
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
 }
 .slide-menu .close {
   display: flex;

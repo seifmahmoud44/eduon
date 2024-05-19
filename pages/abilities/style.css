@@ -1,0 +1,26 @@
+.img-con {
+  margin-bottom: 10px;
+}
+.img-con h2 {
+  margin: 0;
+}
+.status-sec > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.status-sec .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details-sec > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.details-sec .container {
+  padding: 0 25px;
+}
+.details-sec li {
+  margin: 0 20px;
+}

@@ -1,0 +1,10 @@
+.qa-sec {
+  min-height: calc(100vh - (80px + 24px));
+  margin: 0;
+  padding: 40px 0;
+}
+.qa-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

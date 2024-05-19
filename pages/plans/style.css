@@ -1,0 +1,68 @@
+:root {
+  --body-color: #f6f5fa;
+  --logo-yello: #f7b50e;
+  --hover-main: #edac07;
+  --light-btn: #fef3d7;
+  --main-font: Dubai;
+  --main-transation: all 0.3s ease;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+/* plans-sec */
+
+.plans-sec .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.plans-sec .container .content {
+  background-color: var(--body-color);
+  box-shadow: var(--shadow);
+
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+}
+.plans-sec .container .title {
+  background-color: #edac07;
+  padding: 20px 0;
+  color: white;
+}
+.plans-sec .container .tow {
+  background-color: #ccf2ff;
+  color: black;
+}
+.plans-sec .container .three {
+  background-color: #8b5cf6;
+}
+.plans-sec .container img {
+  width: 30px;
+}
+.plans-sec .container .feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #cbd5e1;
+}
+.plans-sec .container .content .feature:nth-child(7) {
+  border: none;
+}
+.plans-sec .container button {
+  padding: 7px 40px;
+  border-radius: 10px;
+  background-color: var(--logo-yello);
+  cursor: pointer;
+  color: white;
+  transition: var(--main-transation);
+  border: none;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 787px) {
+  .plans-sec .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
