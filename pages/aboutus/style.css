@@ -1,0 +1,56 @@
+:root {
+  --body-color: #f6f5fa;
+  --logo-yello: #f7b50e;
+  --hover-main: #edac07;
+  --light-btn: #fef3d7;
+  --main-font: Dubai;
+  --main-transation: all 0.3s ease;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.about-sec h1 {
+  font-weight: bold;
+}
+.about-sec h1 span {
+  font-weight: bold;
+  color: var(--hover-main);
+}
+
+/* features-sec */
+.features-sec {
+  text-align: center;
+}
+.features-sec > h1 {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.features-sec .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features-sec .container .f-card {
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--body-color);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.features-sec .container .f-card img {
+  width: 100px;
+}
+.features-sec .container .f-card p {
+  margin: 0;
+  font-weight: bold;
+}
+@media (max-width: 787px) {
+  .features-sec .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

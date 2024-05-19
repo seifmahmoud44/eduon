@@ -1,5 +1,5 @@
 :root {
-  --body-color: #ffffff;
+  --body-color: #f6f5fa;
   --logo-yello: #f7b50e;
   --hover-main: #edac07;
   --light-btn: #fef3d7;
@@ -255,6 +255,8 @@ header button:hover {
 }
 
 /* swiper section */
+.swiper-con {
+}
 .swiper-con h1 {
   margin: auto;
   width: fit-content;
@@ -273,6 +275,7 @@ header button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--body-color);
 }
 
 .swiper {
