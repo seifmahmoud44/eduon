@@ -5,7 +5,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 1,
     disableOnInteraction: false,
   },
-  allowTouchMove: false,
+  allowTouchMove: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -37,3 +37,48 @@ links.forEach((ele) => {
     slideMenu.classList.remove("active");
   };
 });
+
+let scroll_top = document.querySelector(".scroll_top");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    scroll_top.style.opacity = "1";
+  } else {
+    scroll_top.style.opacity = "0";
+  }
+});
+
+scroll_top.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+let isChecked = document.querySelector(
+  ".top-check-hostile .switch input"
+).checked;
+
+const priceElements = document.querySelectorAll(".plan-price span");
+
+function updatePrices() {
+  priceElements.forEach((span) => {
+    const originalPrice = span.getAttribute("data-original-price");
+    if (isChecked) {
+      const currentPrice = parseFloat(originalPrice) * 3;
+      span.textContent = currentPrice.toFixed(2);
+    } else {
+      span.textContent = originalPrice;
+    }
+  });
+}
+
+priceElements.forEach((span) => {
+  if (!span.hasAttribute("data-original-price")) {
+    span.setAttribute("data-original-price", span.textContent);
+  }
+});
+
+document
+  .querySelector(".top-check-hostile .switch input")
+  .addEventListener("change", function () {
+    isChecked = this.checked;
+    updatePrices();
+  });
